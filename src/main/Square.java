@@ -5,8 +5,8 @@ public class Square {
     {
         this.sideLength = sideLength;
     }
-    public perimeter()
+    public area()
     {
-    		return (4*sideLength);
+    		return (sideLength*sideLength);
     }
 }
