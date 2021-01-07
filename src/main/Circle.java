@@ -5,12 +5,13 @@ public class Circle
     {
         this.radius = radius;
     }
-    public int area()
+    public int perimeter()
     {
-        return (2*3*radius);
+    	return (2*3*radius);
     }
     public int area()
     {
     	return (3*radius*radius);
     }
+    
 }
