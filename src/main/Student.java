@@ -6,6 +6,18 @@ public class Student {
     private int csScore;
     private final static int COURSE_LIST_SIZE = 3;
 
+
+    public Student(String name) { 
+        this.name = name;
+    }
+
+    public Student(String name, int mathScore, int englishScore, int csScore){
+        this.name = name;
+        this.mathScore = mathScore;
+        this.englishScore = englishScore;
+        this.csScore = csScore;
+    }
+
     public String getName() {
         return name;
     }
