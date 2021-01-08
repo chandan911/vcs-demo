@@ -50,12 +50,19 @@ public class Student {
         this.csScore = csScore;
     }
 
-    public int getTotalScore()
-    {
+    public int getTotalScore() {
         return this.csScore + this.mathScore + this.englishScore;
     }
+
     public double getAvgScore(){
         double totalScore = getTotalScore();
+        return totalScore/ COURSE_LIST_SIZE;
+    }
+    public int getTotalScore(int csScore, int mathScore, int englishScore) {
+        return csScore + mathScore + englishScore;
+    }
+    public double getAvgScore(int csScore, int mathScore, int englishScore){
+        double totalScore = csScore + mathScore + englishScore;
         return totalScore/ COURSE_LIST_SIZE;
     }
 }
