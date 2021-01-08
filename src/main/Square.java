@@ -1,5 +1,5 @@
 public class Square {
-    int sideLength;
+    private int sideLength;
 
     public Square(int sideLength) 
     {
