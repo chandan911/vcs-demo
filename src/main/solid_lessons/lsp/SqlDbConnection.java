@@ -2,7 +2,7 @@ package solid_lessons.lsp;
 
 import solid_lessons.srp.User;
 
-public class SqlDbConnection implements UserDbConnection {
+public class SqlDbConnection implements BaseDbConnection, MigratableDbConnection {
   @Override
   public Boolean save(User user) {
     //Implementation
@@ -14,4 +14,11 @@ public class SqlDbConnection implements UserDbConnection {
     //Implementation
     return null;
   }
+
+  @Override
+  public Boolean migrate() {
+    //Implementation
+    return true;
+  }
+
 }

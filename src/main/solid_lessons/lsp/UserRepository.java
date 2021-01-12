@@ -3,7 +3,7 @@ package solid_lessons.lsp;
 import solid_lessons.srp.User;
 
 public class UserRepository {
-  private UserDbConnection userDbConnection = new MongoDbConnection();
+  private BaseDbConnection userDbConnection = new MongoDbConnection();
 
   public Boolean save(User user) {
     return userDbConnection.save(user);

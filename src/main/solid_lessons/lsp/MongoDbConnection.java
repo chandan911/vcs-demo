@@ -2,7 +2,7 @@ package solid_lessons.lsp;
 
 import solid_lessons.srp.User;
 
-public class MongoDbConnection implements UserDbConnection {
+public class MongoDbConnection implements BaseDbConnection, ElectableDbConnection {
   @Override
   public Boolean save(User user) {
     //Implementation
@@ -13,5 +13,11 @@ public class MongoDbConnection implements UserDbConnection {
   public User getUser() {
     //Implementation
     return null;
+  }
+
+  @Override
+  public Boolean electNewPrimary() {
+    //Implementation
+    return true;
   }
 }
